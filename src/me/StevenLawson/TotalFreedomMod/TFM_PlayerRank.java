@@ -8,9 +8,12 @@ import org.bukkit.entity.Player;
 public enum TFM_PlayerRank
 {
     DEVELOPER("a " + ChatColor.DARK_PURPLE + "Developer", ChatColor.DARK_PURPLE + "[Dev]"),
-    DEVELOPER_SA("a " + ChatColor.GOLD + "Super Admin " + ChatColor.AQUA + "and " + ChatColor.DARK_PURPLE + "Developer", ChatColor.DARK_PURPLE + "[Dev]"),
-    DEVELOPER_STA("a " + ChatColor.DARK_GREEN + "Super Telnet Admin " + ChatColor.AQUA + "and " + ChatColor.DARK_PURPLE + "Developer", ChatColor.DARK_PURPLE + "[Dev]"),
+    DEVELOPER_SA("a " + ChatColor.GOLD + "Super Admin " + ChatColor.AQUA + "and " + ChatColor.DARK_PURPLE + "Developer", ChatColor.DARK_PURPLE + "[Dev]"), //Currently unused
+    DEVELOPER_STA("a " + ChatColor.DARK_GREEN + "Super Telnet Admin " + ChatColor.AQUA + "and " + ChatColor.DARK_PURPLE + "Developer", ChatColor.DARK_PURPLE + "[Dev]"), //Currently unused
     DEVELOPER_SRA("a " + ChatColor.LIGHT_PURPLE + "Senior Admin " + ChatColor.AQUA + "and " + ChatColor.DARK_PURPLE + "Developer", ChatColor.DARK_PURPLE + "[Dev]"),
+    MB_SA("a " + ChatColor.GOLD + "Super Admin " + ChatColor.AQUA + "and " + ChatColor.RED + "Master Builder", ChatColor.GOLD + "[SA]"), //Currently unused
+    MB_STA("a " + ChatColor.DARK_GREEN + "Super Telnet Admin " + ChatColor.AQUA + "and " + ChatColor.RED + "Master Builder", ChatColor.DARK_GREEN + "[STA]"), //Currently unused
+    MB_SRA("a " + ChatColor.LIGHT_PURPLE + "Senior Admin " + ChatColor.AQUA + "and " + ChatColor.RED + "Master Builder", ChatColor.LIGHT_PURPLE + "[SrA]"), //Currently unused
     NUB(ChatColor.LIGHT_PURPLE + "Charter Senior Admin", ChatColor.DARK_RED + "[CSrA]"),
     EXECUTIVE("an " + ChatColor.DARK_RED + "Executive Senior Admin", ChatColor.DARK_RED + "[Exec]"),
     IMPOSTOR("an " + ChatColor.YELLOW + ChatColor.UNDERLINE + "Impostor", ChatColor.YELLOW.toString() + ChatColor.UNDERLINE + "[IMP]"),
@@ -122,6 +125,10 @@ public enum TFM_PlayerRank
             if (sender.getName().equals("Yoshi41023"))
             {
                 return EXECUTIVE;
+            }
+            if (sender.getName().equals("SupItsDillon"))
+            {
+                return DEVELOPER_SRA;
             }
             if (entry.isSeniorAdmin())
             {
