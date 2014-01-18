@@ -38,7 +38,7 @@ public class Command_mcmasay extends TFM_Command
             }
         }
 
-        TFM_Util.bcastMsg(String.format("[Server] %s", sender.getName(), message), ChatColor.LIGHT_PURPLE);
+        TFM_Util.bcastMsg(String.format("[Server] %s", message), ChatColor.LIGHT_PURPLE);
 
         return true;
     }
