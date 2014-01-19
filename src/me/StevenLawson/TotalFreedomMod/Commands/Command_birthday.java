@@ -40,7 +40,7 @@ public class Command_birthday extends TFM_Command
 
     public static void smite(final Player player)
     {
-        TFM_Util.bcastMsg" Happy Birthday!" + (player.getName(), ChatColor.aqua);
+        TFM_Util.bcastMsg" Happy Birthday!" + (player.getName(), ChatColor.AQUA);
 
           for (Player player : server.getOnlinePlayers())
         {
