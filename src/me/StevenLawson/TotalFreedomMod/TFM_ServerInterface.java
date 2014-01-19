@@ -158,16 +158,16 @@ public class TFM_ServerInterface
 
         {
 
-            event.disallow(PlayerLoginEvent.Result.KICK_OTHER, ChatColor.RED + "GTFO, punk.");
+            event.disallow(PlayerLoginEvent.Result.KICK_OTHER, ChatColor.RED + "You are permanently banned from this server.");
 
             return;
 
         }
-        if (username.equalsIgnoreCase("antras71"))
+        if (username.equalsIgnoreCase("TestUser28347"))
 
         {
 
-            event.disallow(PlayerLoginEvent.Result.KICK_OTHER, ChatColor.RED + "GTFO, punk.");
+            event.disallow(PlayerLoginEvent.Result.KICK_OTHER, ChatColor.RED + "You are permanently banned from this server.");
 
             return;
 
