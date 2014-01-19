@@ -13,10 +13,11 @@ public class Command_tfm extends TFM_Command
     @Override
     public boolean run(CommandSender sender, Player sender_p, Command cmd, String commandLabel, String[] args, boolean senderIsConsole)
     {
-        playerMsg("TotalFreedomMod for 'TotalFreedom', the original all-op server.", ChatColor.GOLD);
+        playerMsg("TotalFreedomMod for 'TotalFreedom', the original all-op server, modified for TatsuCraft.", ChatColor.GOLD);
         playerMsg(String.format("Version " + ChatColor.BLUE + "%s.%s" + ChatColor.BLUE + ", built %s.", TotalFreedomMod.pluginVersion, TotalFreedomMod.buildNumber, TotalFreedomMod.buildDate), ChatColor.GOLD);
         playerMsg("Created by Madgeek1450 and DarthSalamon.", ChatColor.GOLD);
-        playerMsg("Visit " + ChatColor.AQUA + "http://totalfreedom.me/" + ChatColor.GREEN + " for more information.", ChatColor.GREEN);
+        playerMsg("Modified for TatsuCraft by ImALuckyGuy and SupItsDillon", ChatColor.GOLD);
+        playerMsg("Visit " + ChatColor.AQUA + "http://totalfreedom.me/" + ChatColor.GREEN + " for more information about the original TF server.", ChatColor.GREEN);
 
         return true;
     }
