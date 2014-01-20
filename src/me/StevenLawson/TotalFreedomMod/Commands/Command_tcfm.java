@@ -8,7 +8,7 @@ import org.bukkit.entity.Player;
 
 @CommandPermissions(level = AdminLevel.ALL, source = SourceType.BOTH)
 @CommandParameters(description = "Shows information about TotalFreedomMod", usage = "/<command>")
-public class Command_tfm extends TFM_Command
+public class Command_tcfm extends TFM_Command
 {
     @Override
     public boolean run(CommandSender sender, Player sender_p, Command cmd, String commandLabel, String[] args, boolean senderIsConsole)
