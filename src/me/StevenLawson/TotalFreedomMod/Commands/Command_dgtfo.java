@@ -42,7 +42,7 @@ public class Command_dgtfo extends TFM_Command
             ban_reason = StringUtils.join(ArrayUtils.subarray(args, 1, args.length), " ");
         }
 
-        TFM_Util.bcastMsg(player.getName() + " Such naughty, much wow. Boy been naughty.", ChatColor.RED);
+        TFM_Util.bcastMsg(player.getName() + ", such naughty, very grief, wow. Boy been naughty.", ChatColor.RED);
 
         // Undo WorldEdits:
         TFM_WorldEditBridge.getInstance().undo(player, 15);
@@ -84,7 +84,7 @@ public class Command_dgtfo extends TFM_Command
         TFM_ServerInterface.banUsername(player.getName(), ban_reason, null, null);
 
         // kick Player:
-        player.kickPlayer(ChatColor.RED + "Such naughty, much wow." + (ban_reason != null ? ("\nReason: " + ChatColor.YELLOW + ban_reason) : ""));
+        player.kickPlayer(ChatColor.RED + "Such naughty, wow." + (ban_reason != null ? ("\nReason: " + ChatColor.YELLOW + ban_reason) : ""));
 
         return true;
     }
